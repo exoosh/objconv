@@ -390,7 +390,7 @@ static int SymbolOverflow(uint64_t x) {
    }
    return Upper != 0;                  // Check for unsigned overflow
 }
-static int SymbolOverflow(uint32_t x) {  // Overloaded 32 bit version
+static int SymbolOverflow(uint32_t /*x*/) {  // Overloaded 32 bit version
    return 0;                           // Cannot overflow if already 32 bits
 }
 

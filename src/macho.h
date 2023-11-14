@@ -507,8 +507,8 @@ struct MAC_dysymtab_command {
  * sections not just the three sections (text, data and bss) in a 4.3BSD file.
  * Also the last 4 bits have had the r_type tag added to them. */
 
-#define R_SCATTERED 0x80000000	// mask to be applied to the r_address field of a relocation_info structure to tell that
-                                 // is is really a scattered_relocation_info stucture
+#define R_SCATTERED 0x80000000 // mask to be applied to the r_address field of a relocation_info structure to tell that
+                               // it is really a scattered_relocation_info structure
 
 struct MAC_relocation_info {
    uint32_t  r_address;      // offset in the section to what is being relocated (source)
@@ -531,7 +531,7 @@ struct MAC_scattered_relocation_info {
 
 // 32-bit relocation types:
 /* Relocation types used in a generic implementation.  Relocation entries for
- * normal things use the generic relocation as discribed above and their r_type
+ * normal things use the generic relocation as described above and their r_type
  * is GENERIC_RELOC_VANILLA (a value of zero).
  *
  * Another type of generic relocation, GENERIC_RELOC_SECTDIFF, is to support
@@ -561,7 +561,7 @@ struct MAC_scattered_relocation_info {
    ref1 is often = target, but may be any label preceding the target. The linker
    has to add (ref1 - ref2) in image minus (ref1 - ref2) in object file to the
    inline value. The relocation source (the position of the inline field) is
-   given in r_address in the first record, relative the the section.
+   given in r_address in the first record, relative to the section.
    Non-scattered, absolute, r_extern = 1:
    r_symbolnum = symbol index (0-based)
    Non-scattered, absolute, r_extern = 0:
@@ -579,9 +579,9 @@ struct MAC_scattered_relocation_info {
 #define MAC32_RELOC_PAIR           1   // The second relocation entry of a pair. Only follows a GENERIC_RELOC_SECTDIFF
 #define MAC32_RELOC_SECTDIFF       2   // A relocation entry for an item that contains the difference of
                                        // two section addresses. This is generally used for position-independent code generation.
-#define MAC32_RELOC_PB_LA_PTR      3   // —Arelocation entry for a prebound lazy pointer. This is always
+#define MAC32_RELOC_PB_LA_PTR      3   // A relocation entry for a prebound lazy pointer. This is always
                                        // a scattered relocation entry. The r_value field contains the non-prebound value of the lazy pointer.
-#define MAC32_RELOC_LOCAL_SECTDIFF 4   // SECTDIFF—Similar to GENERIC_RELOC_SECTDIFF except that this entry refers specifically to the address in this item. 
+#define MAC32_RELOC_LOCAL_SECTDIFF 4   // SECTDIFF: Similar to GENERIC_RELOC_SECTDIFF except that this entry refers specifically to the address in this item. 
                                        // If the address is that of a globally visible coalesced symbol, this relocation entry does not change if the symbol is overridden. 
                                        // This is used to associate stack unwinding information with the object code this relocation entry describes.
 

@@ -384,7 +384,7 @@ void CELF2MAC<ELFSTRUCTURES,MACSTRUCTURES>::MakeSymbolTable() {
 
 template <class TELF_Header, class TELF_SectionHeader, class TELF_Symbol, class TELF_Relocation,
           class TMAC_header, class TMAC_segment_command, class TMAC_section, class TMAC_nlist, class MInt>
-void CELF2MAC<ELFSTRUCTURES,MACSTRUCTURES>::Elf2MacRelocations(Elf32_Shdr & OldRelHeader, MAC_section_32 & NewHeader, uint32_t NewRawDataOffset, uint32_t oldsec) {
+void CELF2MAC<ELFSTRUCTURES,MACSTRUCTURES>::Elf2MacRelocations(Elf32_Shdr & OldRelHeader, MAC_section_32 & NewHeader, uint32_t NewRawDataOffset, uint32_t /*oldsec*/) {
    // Convert 32-bit relocations from ELF to MAC
    // (This function has two template instances, only the 32-bit instance is used)
 
@@ -584,7 +584,7 @@ void CELF2MAC<ELFSTRUCTURES,MACSTRUCTURES>::Elf2MacRelocations(Elf32_Shdr & OldR
 
 template <class TELF_Header, class TELF_SectionHeader, class TELF_Symbol, class TELF_Relocation,
           class TMAC_header, class TMAC_segment_command, class TMAC_section, class TMAC_nlist, class MInt>
-void CELF2MAC<ELFSTRUCTURES,MACSTRUCTURES>::Elf2MacRelocations(Elf64_Shdr & OldRelHeader, MAC_section_64 & NewHeader, uint32_t NewRawDataOffset, uint32_t oldsec) {
+void CELF2MAC<ELFSTRUCTURES,MACSTRUCTURES>::Elf2MacRelocations(Elf64_Shdr & OldRelHeader, MAC_section_64 & NewHeader, uint32_t NewRawDataOffset, uint32_t /*oldsec*/) {
    // Convert 64-bit relocations from ELF to MAC
    // (This function has two template instances, only the 64-bit instance is used)
 

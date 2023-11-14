@@ -289,7 +289,8 @@ void CCOF2COF::MakeBinaryFile() {
             }
             if (pSectHeader->PRelocations >= EndOfOldStringTable && pSectHeader->PRawData <= GetDataSize()) {
                pSectHeader->PRelocations += EndOfNewStringTable - EndOfOldStringTable;
-            }            if (pSectHeader->PLineNumbers >= EndOfOldStringTable && pSectHeader->PRawData <= GetDataSize()) {
+            }
+            if (pSectHeader->PLineNumbers >= EndOfOldStringTable && pSectHeader->PRawData <= GetDataSize()) {
                pSectHeader->PLineNumbers += EndOfNewStringTable - EndOfOldStringTable;
             }
          }
