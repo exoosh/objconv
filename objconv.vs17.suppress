@@ -1,0 +1,252 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="SuppressVersion">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CurrentVersion" type="xs:int" minOccurs="0" />
+                <xs:element name="IsPrimary" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="objconv" msdata:CaseSensitive="False">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="FileName" type="xs:string" default="" />
+                <xs:element name="ErrorCode" type="xs:string" default="" />
+                <xs:element name="Message" type="xs:string" default="" />
+                <xs:element name="CodePrev" type="xs:unsignedInt" default="0" />
+                <xs:element name="CodeCurrent" type="xs:unsignedInt" default="0" />
+                <xs:element name="CodeNext" type="xs:unsignedInt" default="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//objconv" />
+        <xs:field xpath="FileName" />
+        <xs:field xpath="ErrorCode" />
+        <xs:field xpath="Message" />
+        <xs:field xpath="CodePrev" />
+        <xs:field xpath="CodeCurrent" />
+        <xs:field xpath="CodeNext" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <SuppressVersion>
+    <CurrentVersion>3</CurrentVersion>
+    <IsPrimary>false</IsPrimary>
+  </SuppressVersion>
+  <objconv>
+    <FileName>cmdline.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>465127191</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>cof2asm.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>453330711</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>cof2cof.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>461457175</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>cof2elf.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>465127191</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>cof2omf.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>453068567</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>coff.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>461719319</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>containers.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>464602903</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>disasm1.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>456738583</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>disasm2.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>456738583</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>elf.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>464865047</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>elf2asm.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>456214295</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>elf2cof.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>463816471</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>elf2elf.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>465127191</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>elf2mac.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>455165719</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>error.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>464865047</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>library.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>465127191</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>mac2asm.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>453068567</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>mac2elf.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>2948679341</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>mac2mac.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>2948679341</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>macho.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>453068567</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>main.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>464340759</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>omf.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>453592855</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>omf2asm.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>3033332402</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>omf2cof.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>453592855</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>omfhash.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>453068567</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+  <objconv>
+    <FileName>opcodes.cpp</FileName>
+    <ErrorCode>V1042</ErrorCode>
+    <Message>This file is marked with copyleft license, which requires you to open the derived source code.</Message>
+    <CodePrev>42</CodePrev>
+    <CodeCurrent>456738583</CodeCurrent>
+    <CodeNext>425955</CodeNext>
+  </objconv>
+</NewDataSet>
